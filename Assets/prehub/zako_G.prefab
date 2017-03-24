@@ -21,9 +21,9 @@ GameObject:
   - component: {fileID: 4869292121250434}
   - component: {fileID: 54703475263311006}
   - component: {fileID: 65350985761536826}
-  - component: {fileID: 114272052997936396}
   - component: {fileID: 114675163245655494}
   - component: {fileID: 114489499111701304}
+  - component: {fileID: 114716625958588800}
   m_Layer: 0
   m_Name: zako_G
   m_TagString: Enemy
@@ -68,7 +68,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1272146755564478}
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 235, y: 0, z: 0}
   m_LocalScale: {x: 80, y: 80, z: 80}
   m_Children:
   - {fileID: 4055858848148566}
@@ -141,21 +141,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.13, z: 0.42}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &114272052997936396
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1272146755564478}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 78951667c757a8947ada97c8305d172e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scoreValue: 0
-  HP: 10
-  Dmg: 5
-  Explosion: {fileID: 0}
 --- !u!114 &114489499111701304
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -179,6 +164,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 928d165a93c31174aa2ab3e63f179b95, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Z_Speed: 1
-  EnemyBullet: {fileID: 1000011811753792, guid: 4eaf1815b9e5b5b468c16025c32854c6,
+  Z_Speed: -1
+  EnemyBullet: {fileID: 1000012996755774, guid: 57e516e8345676e488e68640e0ec665b,
     type: 2}
+--- !u!114 &114716625958588800
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1272146755564478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18f8299ca51322e4db93f7d37762a9ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 3500
+  HP: 300
+  Dmg: 5
+  Explosion: {fileID: 1000011811753792, guid: 4eaf1815b9e5b5b468c16025c32854c6, type: 2}
+  Item: {fileID: 1509677254945786, guid: 8c8cdc2613dadb247892e7672e4f64de, type: 2}

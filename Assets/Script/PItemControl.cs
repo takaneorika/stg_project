@@ -24,7 +24,7 @@ public class PItemControl : MonoBehaviour
        
         while (true)
         {
-            X -= 2;
+            X -= 3;
             transform.eulerAngles = new Vector3(X, 0, 0);
             return;
         }

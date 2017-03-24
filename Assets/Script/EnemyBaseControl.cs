@@ -9,7 +9,7 @@ public class EnemyBaseControl : MonoBehaviour
     public GameObject zako_C;//帰宅部
     public GameObject zako_D;//帰宅部
     public GameObject zako_E;//Destroy(this.gameObject, 7);
-    //public GameObject zako_F;//Destroy(this.gameObject, 7);
+    public GameObject zako_F;//アイテム持ち
     public GameObject Bit1;//Destroy(this.gameObject, 10);
     public GameObject Bit2;//Destroy(this.gameObject, 10);
     public GameObject Bit3;//Destroy(this.gameObject, 10);
@@ -283,19 +283,17 @@ public class EnemyBaseControl : MonoBehaviour
             yield return new WaitForSeconds(10);
             for (i = 1; i <= 4; i++)
             {
-                y += 20;
-                y *= -1;
+                y += +10;
                 yield return new WaitForSeconds(0.5f);
                 Instantiate(zako_A, new Vector3(transform.position.x + 270, transform.position.y,
                    transform.position.z), quat);
 
-                Instantiate(zako_D, new Vector3(transform.position.x + 270, transform.position.y + y,
+                Instantiate(zako_D, new Vector3(transform.position.x + 270, transform.position.y - y,
                    transform.position.z), quat);
 
-                Instantiate(zako_C, new Vector3(transform.position.x + 270, transform.position.y - y,
+                Instantiate(zako_C, new Vector3(transform.position.x + 270, transform.position.y + y,
                            transform.position.z), quat);
             }
-
         }
 
         //wave11
@@ -321,8 +319,8 @@ public class EnemyBaseControl : MonoBehaviour
                    transform.position.z), quat);
             }
 
-            Instantiate(zako_B, new Vector3(transform.position.x + 270, transform.position.y,
-               transform.position.z), quat);
+            Instantiate(zako_F, new Vector3(transform.position.x + 270, transform.position.y,
+               transform.position.z), Quaternion.Euler(0, -90, 0));
 
             y = 0;
             for (i = 1; i <= 5; i++)
