@@ -40,14 +40,16 @@ public class StarfighterControl : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyDown("d"))
+        if(GameObject.Find("music_Box").GetComponent<ClearFlag>().Clearflag == false)
         {
-            Instantiate(Explosion, new Vector3(transform.position.x, transform.position.y,
-                transform.position.z), Quaternion.identity);
-            GameObject.Find("Main Camera").GetComponent<GameControl>().gameFlag = false;
-            Destroy(this.gameObject);
+            if (Input.GetKeyDown("d"))
+            {
+                Instantiate(Explosion, new Vector3(transform.position.x, transform.position.y,
+                    transform.position.z), Quaternion.identity);
+                GameObject.Find("Main Camera").GetComponent<GameControl>().gameFlag = false;
+                Destroy(this.gameObject);
+            }
         }
-
              
 
         if (Input.GetKeyDown("x"))
@@ -159,8 +161,6 @@ public class StarfighterControl : MonoBehaviour
 
     void OnTriggerEnter(Collider coll)
     {
-        
-
         if ((coll.gameObject.tag == "Enemy"|| coll.gameObject.tag == "Boss"))
         {
             Instantiate(Explosion, new Vector3(transform.position.x, transform.position.y,

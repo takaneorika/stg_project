@@ -40,6 +40,7 @@ GameObject:
   - component: {fileID: 65000011774381412}
   - component: {fileID: 114000010238824476}
   - component: {fileID: 114000011193468004}
+  - component: {fileID: 114969043424276966}
   m_Layer: 0
   m_Name: zako_D
   m_TagString: Enemy
@@ -150,11 +151,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c1d3aec0edf3cc4d954e7725c869872, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  X: 2
-  scoreValue: 240
-  HP: 5
-  Dmg: 5
-  Explosion: {fileID: 1000011811753792, guid: 4eaf1815b9e5b5b468c16025c32854c6, type: 2}
+  X: 0
+  turn: -100
 --- !u!114 &114000011193468004
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -167,3 +165,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _setCamera: {fileID: 0}
+--- !u!114 &114969043424276966
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000011641503950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78951667c757a8947ada97c8305d172e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 645
+  HP: 10
+  Dmg: 5
+  Explosion: {fileID: 1000011811753792, guid: 4eaf1815b9e5b5b468c16025c32854c6, type: 2}

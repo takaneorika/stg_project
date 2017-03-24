@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+//ビット射撃タイプ1
+
 public class BitControl1 : MonoBehaviour {
    
     public GameObject EnemyBullet1;

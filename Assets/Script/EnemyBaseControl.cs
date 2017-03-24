@@ -9,7 +9,7 @@ public class EnemyBaseControl : MonoBehaviour
     public GameObject zako_C;//帰宅部
     public GameObject zako_D;//帰宅部
     public GameObject zako_E;//Destroy(this.gameObject, 7);
-    public GameObject zako_F;//Destroy(this.gameObject, 7);
+    //public GameObject zako_F;//Destroy(this.gameObject, 7);
     public GameObject Bit1;//Destroy(this.gameObject, 10);
     public GameObject Bit2;//Destroy(this.gameObject, 10);
     public GameObject Bit3;//Destroy(this.gameObject, 10);
@@ -69,7 +69,7 @@ public class EnemyBaseControl : MonoBehaviour
             Instantiate(zako_E, new Vector3(transform.position.x + 270, transform.position.y - 50,
                         transform.position.z), quat);
 
-            Instantiate(zako_F, new Vector3(transform.position.x + 270, transform.position.y,
+            Instantiate(zako_E, new Vector3(transform.position.x + 270, transform.position.y,
                         transform.position.z), quat);
 
         }
@@ -189,7 +189,7 @@ public class EnemyBaseControl : MonoBehaviour
             Instantiate(zako_E, new Vector3(transform.position.x + 270, transform.position.y - 50,
                         transform.position.z), quat);
 
-            Instantiate(zako_F, new Vector3(transform.position.x + 270, transform.position.y,
+            Instantiate(zako_E, new Vector3(transform.position.x + 270, transform.position.y,
                         transform.position.z), quat);
         }
 

@@ -9,11 +9,11 @@ public class BossMove : MonoBehaviour {
     public float Z_Speed = 1;
     public float Z = 0;
     float intervalTime;
-    public GameObject EnemyBullet1;
-    public GameObject EnemyBullet2;
-    public GameObject EnemyBullet3;
-    public GameObject EnemyBullet4;
-    public GameObject EnemyBullet5;
+    public GameObject EnemyBullet1;//バレット1
+    public GameObject EnemyBullet2;//バレット2
+    public GameObject EnemyBullet3;//バレット3
+    public GameObject EnemyBullet4;//バレット4
+    public GameObject EnemyBullet5;//バレット5
    
     // Use this for initialization
     void Start()
@@ -22,7 +22,7 @@ public class BossMove : MonoBehaviour {
     }
 
     
-
+    //ダメージ判定
     void OnTriggerEnter(Collider coll)
     {
         if (coll.gameObject.tag == "PlayerBullet")
@@ -30,6 +30,7 @@ public class BossMove : MonoBehaviour {
             HP = HP - Dmg;
         }
 
+        //撃破後クリアフラグの切り替え
         if (HP == 0)
         {
 
@@ -46,7 +47,7 @@ public class BossMove : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-            
+        //登場
         if (transform.position.x >= 140)
         {
             transform.Translate(0, 0, 1 * Z_Speed);
@@ -62,7 +63,7 @@ public class BossMove : MonoBehaviour {
             {
                 if (intervalTime >= 0.3f)
                 {
-                    if (HP > 2500)
+                    if (HP > 1000)
                     {
                         intervalTime = -0.8f;
                         Instantiate(EnemyBullet1, new Vector3(transform.position.x - 80, transform.position.y - 15,
@@ -76,6 +77,8 @@ public class BossMove : MonoBehaviour {
                     }
                 }
             }
+
+            //攻撃パターン変化
             if (HP < 2500)
             {
                 if (intervalTime >= 0.3f)

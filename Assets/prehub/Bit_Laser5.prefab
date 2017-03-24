@@ -36,7 +36,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4000010534435856}
-  - component: {fileID: 114000013739654748}
   - component: {fileID: 114000010599096930}
   - component: {fileID: 114000013243922022}
   - component: {fileID: 54000010972591588}
@@ -218,17 +217,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _setCamera: {fileID: 0}
---- !u!114 &114000013739654748
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000011776797574}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!198 &198000010985102970
 ParticleSystem:
   m_ObjectHideFlags: 1

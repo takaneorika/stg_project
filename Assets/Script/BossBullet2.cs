@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+//回転砲台2
+
 public class BossBullet2 : MonoBehaviour {
 
     public float Z = 0;

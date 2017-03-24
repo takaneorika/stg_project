@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 65000013031344988}
   - component: {fileID: 114000010974721612}
   - component: {fileID: 114000012767256924}
+  - component: {fileID: 114188650456184750}
   m_Layer: 0
   m_Name: BitDeroid_A
   m_TagString: Enemy
@@ -151,10 +152,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Z: 0
-  scoreValue: 4980
-  HP: 500
-  Dmg: 5
-  Explosion: {fileID: 1000011811753792, guid: 4eaf1815b9e5b5b468c16025c32854c6, type: 2}
 --- !u!114 &114000012767256924
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -169,3 +166,18 @@ MonoBehaviour:
   Bullet1: {fileID: 1000012996755774, guid: 57e516e8345676e488e68640e0ec665b, type: 2}
   Bullet2: {fileID: 1000010542507792, guid: b0485b63781d6d94db73b09c8293116e, type: 2}
   Bullet3: {fileID: 1000014129219686, guid: 655a5fd0850b3e548818a2068d12219d, type: 2}
+--- !u!114 &114188650456184750
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013338127918}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78951667c757a8947ada97c8305d172e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 3450
+  HP: 1250
+  Dmg: 5
+  Explosion: {fileID: 1000011811753792, guid: 4eaf1815b9e5b5b468c16025c32854c6, type: 2}

@@ -40,6 +40,7 @@ GameObject:
   - component: {fileID: 65000012851255796}
   - component: {fileID: 114000010432344612}
   - component: {fileID: 114000014278459564}
+  - component: {fileID: 114218192111994708}
   m_Layer: 0
   m_Name: zako_E
   m_TagString: Enemy
@@ -162,14 +163,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08a984c4a24d8b542aa57fcb62525575, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 685
-  HP: 100
-  Dmg: 5
-  Explosion: {fileID: 1000011811753792, guid: 4eaf1815b9e5b5b468c16025c32854c6, type: 2}
+  Xpoint: 100
   Z_Speed: 2
-  EnemyBullet1: {fileID: 1000012449295324, guid: d973e9e4cdd5c0e4199fb092297f3278,
-    type: 2}
   EnemyBullet2: {fileID: 1000010542507792, guid: b0485b63781d6d94db73b09c8293116e,
     type: 2}
   EnemyBullet3: {fileID: 1000014129219686, guid: 655a5fd0850b3e548818a2068d12219d,
     type: 2}
+--- !u!114 &114218192111994708
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013767645128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78951667c757a8947ada97c8305d172e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 0
+  HP: 10
+  Dmg: 5
+  Explosion: {fileID: 1000011811753792, guid: 4eaf1815b9e5b5b468c16025c32854c6, type: 2}

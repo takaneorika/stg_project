@@ -27,7 +27,7 @@ GameObject:
   - component: {fileID: 114000013083978102}
   m_Layer: 0
   m_Name: Boss
-  m_TagString: Enemy
+  m_TagString: Boss
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -289,7 +289,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreValue: 24560
-  HP: 5000
+  HP: 3500
   Dmg: 5
   Explosion: {fileID: 1000011750842334, guid: 710ce79068a148e4eaf1def2c2e9d091, type: 2}
   Z_Speed: 1

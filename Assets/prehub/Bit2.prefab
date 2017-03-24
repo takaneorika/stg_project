@@ -120,6 +120,8 @@ GameObject:
   - component: {fileID: 54000013921843686}
   - component: {fileID: 135000011931626616}
   - component: {fileID: 114000012930546370}
+  - component: {fileID: 114377913231440598}
+  - component: {fileID: 114838026366418884}
   m_Layer: 0
   m_Name: Bit2
   m_TagString: Enemy
@@ -182,7 +184,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000013776016596}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 90}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4000011173333856}
@@ -478,10 +480,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Z: 0
-  scoreValue: 1000
-  HP: 200
-  Dmg: 5
-  Explosion: {fileID: 1000011750842334, guid: 710ce79068a148e4eaf1def2c2e9d091, type: 2}
 --- !u!114 &114000013126040466
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -521,6 +519,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemyBullet6: {fileID: 1000013548486654, guid: f3462642091b280429b2d5181c93ee26,
     type: 2}
+--- !u!114 &114377913231440598
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013776016596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78951667c757a8947ada97c8305d172e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 3250
+  HP: 450
+  Dmg: 5
+  Explosion: {fileID: 1000011750842334, guid: 710ce79068a148e4eaf1def2c2e9d091, type: 2}
+--- !u!114 &114838026366418884
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013776016596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68e8b9eec2dc9aa42ba1f3b631ecb385, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!135 &135000011931626616
 SphereCollider:
   m_ObjectHideFlags: 1

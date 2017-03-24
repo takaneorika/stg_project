@@ -39,6 +39,8 @@ GameObject:
   - component: {fileID: 54000011415513688}
   - component: {fileID: 65000012194163682}
   - component: {fileID: 114000012400136186}
+  - component: {fileID: 114284035967392478}
+  - component: {fileID: 114129187649745974}
   m_Layer: 0
   m_Name: zako_A
   m_TagString: Enemy
@@ -149,8 +151,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82794ef1fa9072a4ba6394784ca655f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 245
+  Z_Speed: 2
+--- !u!114 &114129187649745974
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012762801012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19757dba99d2d6349ae2047a8af3074f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _setCamera: {fileID: 0}
+--- !u!114 &114284035967392478
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012762801012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78951667c757a8947ada97c8305d172e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 365
   HP: 10
   Dmg: 5
   Explosion: {fileID: 1000011811753792, guid: 4eaf1815b9e5b5b468c16025c32854c6, type: 2}
-  Z_Speed: 2

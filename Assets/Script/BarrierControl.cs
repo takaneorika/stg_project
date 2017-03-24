@@ -7,10 +7,16 @@ public class BarrierControl : MonoBehaviour {
     public GameObject Explosion;
     public GameObject Barrier;
     public int BarrierValue = 1;
+    public int BarrierPlus = 5;
 
     void OnTriggerEnter(Collider hit)
     {
 
+        if (hit.tag == "Item")
+        {
+            BarrierPower += 5;
+            BarrierManager.score += BarrierPlus;
+        }
 
         if (hit.tag == "EnemyBullet")
         {
